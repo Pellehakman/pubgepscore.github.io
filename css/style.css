@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@400;500;700&family=Roboto+Condensed:ital,wght@0,300;0,700;1,300&family=Saira+Condensed&display=swap');
+:root {
+    
+    --bg-white: #ffffff;
+    --bg-light-grey:#f1f1f1;
+    --bg-med-grey: #c9c9c9;
+    --bg-heavy-grey: #868686;
+    --bg-heavier-grey: #494949;
+    --bg-dark-grey: #181818;
+    --bg-black: #000000;   
+    
+    --bg-yellow: #f0e549;
+    --bg-blue: #77bde6;   
+    --bg-orange: #df5a25;
+    --bg-green: #347037;
+
+
+    --fs-list-w: 1rem;
+    --fs-m: 1.5rem;
+    --fs-s: 1.2rem;
+    --fs-m: 1.5rem;
+    --fs-l: 2rem;
+    --fs-xl: 1.7rem;
+    --fs-xxl: 2.1rem;
+
+    --fw-xs: 300;
+    --fw-s: 500;
+    --fw-m: 700;    
+
+    --ff-assistant: 'Assistant';
+    --ff-roboto: 'Roboto Condensed';
+    --ff-saira: 'Saira Condensed';   
+    --ff-arial: Arial, sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.flex{
+    display: flex;
+}
+li{
+    text-decoration: none;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.yellow{
+    background-color: var(--bg-yellow);
+}
+.blue{
+    background-color: var(--bg-blue);
+}
+.orange{
+    background-color: var(--bg-orange);
+}
+.green{
+    background-color: var(--bg-green);
+}
+.wrapper{
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    /* overflow-x: hidden; */
+    
+}
+
+.nav--top{
+    background-color: var(--bg-dark-grey);
+    justify-content: center;
+}
+
+.nav--top-container{
+    flex-wrap: wrap;
+    padding: .5rem 0 .5rem 0;
+    max-width: 80rem;  
+    justify-content: space-between;
+    color: var(--bg-white);
+    flex: 1; 
+}
+
+.nav--top-info{
+    font-family: var(--ff-saira);
+    align-items: center;
+    min-width: max-content;
+    flex:5;
+    user-select: none;    
+}
+
+.nav--top-active{
+    font-family: var(--ff-roboto);
+    align-items: center;
+    min-width: max-content;
+    flex:1;
+    user-select: none; 
+}
+.nav--top-player{
+    font-family: var(--ff-roboto);    
+    font-style: italic;
+    min-width: max-content;
+    color: var(--bg-yellow);
+    flex:1;  
+}
+
+.nav--top-log{
+    font-family: var(--ff-roboto);
+    align-items: center;
+    min-width: max-content;
+    justify-content: flex-end;
+    flex:1;    
+}
+
+
+.nav--main-container{
+    background-color: #7cbfe6;
+    justify-content: center;    
+}
+
+.nav--main-menu{   
+    flex: 1;
+    flex-wrap: wrap;   
+    max-width: 80rem;
+    justify-content: space-between;
+    padding: 1rem 0 1rem 0;
+    align-items: center;
+}
+
+.nav--main-logo{
+    font-family: var(--ff-saira);
+    font-size: var(--fs-xxl);
+    font-weight: 700;
+    color: var(--bg-white);
+    background-color: #181818;
+    padding: 1rem;
+    user-select: none;    
+}
+
+
+.nav--main-item{    
+    font-family: var(--ff-roboto);
+    font-size: var(--fs-xl);
+    font-weight: 700;
+    color: var(--bg-white);
+}
+
+.nav--main-input{
+    font-family: var(--ff-roboto);
+    font-size: var(--fs-m) ;
+    font-weight:var(--fw-s);
+    height: 2rem;
+    text-align: center; 
+}
+
+
+/*-------------------- MAIN START -----------------------*/
+
+/*-------- size config START --------*/
+
+.left--border{
+    background-color:var(--bg-light-grey);
+    flex: 1;
+    
+}
+.right--border{
+    background-color:var(--bg-light-grey);    
+    flex: 1;
+
+}
+
+.main--wrapper{
+    flex:4;
+}
+.main{      
+    justify-content: center;      
+    background-color: #ffffff;
+    
+    flex-wrap: wrap ;  
+    flex: 5;
+    padding: 1rem;   
+    gap: 1rem;
+}
+
+.main--aside{  
+    flex-direction: column;   
+    flex: .6;
+    background-color: var(--bg-light-grey) ;
+    
+}
+.aside-menu-box{
+    margin-top: 1rem;
+    flex-direction: column;
+    gap: .3rem;
+}
+.aside-info{
+    text-align: center; 
+    background-color: var(--bg-black);
+    color: var(--bg-white);
+    font-family: var(--ff-saira);
+    font-size: var(--fs-xxl);
+    font-weight: var(--fw-m);   
+
+}
+
+.aside-menu-item{   
+    text-align: center; 
+    background-color: var(--bg-dark-grey);
+    color: var(--bg-white);
+    font-family: var(--ff-saira);
+    font-size: var(--fs-xl);
+    font-weight: var(--fw-m); 
+
+}
+.aside-menu-item:hover{
+    background-color: var(--bg-heavier-grey);
+    color: var(--bg-blue);
+    
+
+}
+
+
+.main--container{
+    flex: 5;    
+    flex-direction: column;    
+    flex-wrap: wrap;   
+}
+
+.main--container-top{
+    /* flex: 1;     */
+    background-color: var(--bg-light-grey)  ;
+    margin-bottom: 1rem;
+}
+   
+.stats--container{
+    flex-wrap: wrap;
+    flex: 1;
+    gap: 1rem;
+}
+
+
+.player-box{
+    background-color: var(--bg-light-grey)  ;
+    flex-wrap: wrap;
+    flex: 1;
+    flex-direction: column;
+    font-family: var(--ff-roboto);
+    font-size: var(--fs-m);
+    font-weight: var(--fw-m);
+    color: var(--bg-white);
+    
+}
+
+
+
+
+
+
+.player-header-box{
+    align-items: center;
+    background-color: var(--bg-dark-grey);      
+    flex: 1; 
+    margin-bottom: 1rem;  
+}
+
+.header-number-box{
+    text-align: center;    
+    align-items: center;
+    justify-content: center;
+    width: 1.8rem;
+    height: 1.8rem; 
+    margin: .3rem ;   
+       
+
+}
+
+
+
+
+.header-player{
+    font-size: var(--fs-m);
+    font-weight: var(--fw-s);
+    
+}
+
+
+
+
+
+
+
+
+
+
+.footer{
+    
+    background-color: var(--bg-dark-grey)  ;
+    flex: 1;
+    
+}
+/*--------- size config END ---------*/
+
+/*-------- TOP INFO START --------*/
+
+.container-top-item{
+    flex: 1;
+    
+    align-items: center;
+}
+
+.top-item-p{
+    text-align: center; 
+    background-color: var(--bg-black);
+    color: var(--bg-white);
+    font-family: var(--ff-saira);
+    font-size: var(--fs-xxl);
+    font-weight: var(--fw-m);
+    padding: 0 3rem 0 3rem;
+}
+
+.container-top-hint{
+    flex-direction: column;
+    margin-left: 1rem;
+    font-family: var(--ff-saira);
+}
+
+.hint-about{   
+    
+    font-weight: var(--fw-m);
+}
+
+.top-hint-head{    
+    font-weight: var(--fw-m);    
+}
+
+
+.top-hint-p{    
+    font-weight: var(--fw-s);
+
+}
+
+/* ------------ player header box ------------- */
+
+
+.stats-list{
+    padding: .2rem 1rem .2rem 1rem;
+    font-family: var(--ff-assistant);
+    justify-content: space-between;
+    /* border-bottom: #ffffff solid 1px; */
+}
+
+.list-what{
+    font-size: var(--fs-list-w);
+    font-weight: var(--fw-s);
+    color: var(--bg-heavy-grey);
+}
+
+.list-quant{
+    font-size: var(--fs-list-w);
+    font-weight: var(--fw-m);
+    color: var(--bg-dark-grey);
+}
