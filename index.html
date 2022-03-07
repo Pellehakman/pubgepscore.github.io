@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <div class="flex wrapper">
+        <div class="flex nav--top">
+            <div class="flex nav--top-container">
+
+                <span class="flex nav--top-info">BASED ON DATA FROM PUBG API</span>
+                <span class="flex nav--top-active">Active player:&nbsp<span class="nav--top-player">Phawkman</span></span>
+                <span class="flex nav--top-log">Sign out</span>
+
+            </div>
+        </div>
+
+        <div class="flex nav--main-container">
+           
+                <ul class="flex nav--main-menu">
+                    <li class="nav--main-logo">EPSCORE</li>
+                    <li class="nav--main-item"><a href="#home">HOME</a></li>
+                    <li class="nav--main-item"><a href="#score">SCORE</a></li>
+                    <li class="nav--main-item"><a href="#score">TOURNAMENT</a></li>
+                    <li class="nav--main-item"><a href="#stats">STATS</a></li>
+                    <li class="nav--main-item"><a class="active" href="#leaderboard">LEADERBOARD</a></li>
+                    <li class="nav--main-item"><a href="#about">ABOUT</a></li>
+                    <div class="flex nav--main-search"> <input class="nav--main-input" id="input-player" type="text" placeholder="Find player">
+                        <button id="player-search-btn">SÖK</button></div>
+                        <!-- <button id="search-btn">ALL SÖK</button> -->
+                   </ul>
+                   <ul>         
+
+
+        </div>
+
+<div class="flex main--wrapper">
+
+
+            <div class="flex left--border"> </div>
+            <main class="flex main">
+
+            <aside class="flex main--aside">
+                <span class="aside-info">STATS</span>
+                <ul class="flex aside-menu-box">
+                    <li class="aside-menu-item"><a href="#alltime">ALL TIME</a></li>
+                    <li class="aside-menu-item"><a href="#today">TODAY</a></li>
+                    <li class="aside-menu-item"><a href="#season">SEASON</a></li>
+                    <li class="aside-menu-item"><a href="#matches">MATCHES</a></li>
+                    
+
+
+                </ul>
+
+                
+            </aside>
+<!-- MAIN CONTAINER START -->
+        <div class="flex main--container"> 
+                <div class="flex main--container-top">
+                    <div class="flex container-top-item">
+                        <p class="top-item-p">ALL TIME STATS</p>
+                        <div class="flex container-top-hint">
+                            <span class="hint-about" >ALL TIME STATS ARE SHOWN FOR THE CHOOSEN PLAYER</span>
+                            <span><span class="top-hint-head">HINT: </span><span class="top-hint-p">To compare more players, press “Add player+” </span></span>
+                        </div>
+                    </div>
+                </div> 
+
+
+<!-- STATS CONTAINER START -->
+        <div class="flex stats--container">  
+
+                <div class="flex player-box player-1">  
+
+                    <div class="flex">
+                        <div class="flex player-header-box">
+                            <div class="flex header-number-box yellow">1</div>
+                            <span class="flex header-player" data-player-id></span>
+                        </div>
+                </div>
+                
+                <div class="flex stats-list"><span class="list-what">kills: </span> <span class="list-quant" data-kills>TBD</span></div>
+                <div class="flex stats-list"><span class="list-what">assists: </span> <span class="list-quant" data-assists>TBD</span></div>
+                <div class="flex stats-list"><span class="list-what">boosts: </span> <span class="list-quant" data-boosts>TBD</span></div>    
+                <div class="flex stats-list"><span class="list-what">dBNOs: </span> <span class="list-quant" data-dBNOs>TBD</span></div>    
+                <div class="flex stats-list"><span class="list-what">damage: </span> <span class="list-quant" data-damage>TBD</span></div>    
+                <div class="flex stats-list"><span class="list-what">heals: </span> <span class="list-quant" data-heals>TBD</span></div>    
+                <div class="flex stats-list"><span class="list-what">headshotKills: </span> <span class="list-quant" data-headshotKills>TBD</span></div>                
+                <div class="flex stats-list"><span class="list-what">longestKill: </span> <span class="list-quant" data-longestKill>TBD</span></div>    
+                <div class="flex stats-list"><span class="list-what">longestTimeSurvived: </span> <span class="list-quant" data-longestTimeSurvived>TBD</span></div>    
+                <div class="flex stats-list"><span class="list-what">losses: </span> <span class="list-quant" data-losses>TBD</span></div>    
+                <div class="flex stats-list"><span class="list-what">maxKillStreaks: </span> <span class="list-quant" data-maxKillStreaks>TBD</span></div>    
+                <div class="flex stats-list"><span class="list-what">revives: </span> <span class="list-quant" data-revives>TBD</span></div>                
+                <div class="flex stats-list"><span class="list-what">rideDistance: </span> <span class="list-quant" data-rideDistance>TBD</span></div>    
+                <div class="flex stats-list"><span class="list-what">roadKills: </span> <span class="list-quant" data-roadKills>TBD</span></div>    
+                <div class="flex stats-list"><span class="list-what">roundMostKills: </span> <span class="list-quant" data-roundMostKills>TBD</span></div>    
+                <div class="flex stats-list"><span class="list-what">roundsPlayed: </span> <span class="list-quant" data-roundsPlayed>TBD</span></div>    
+                <div class="flex stats-list"><span class="list-what">suicides: </span> <span class="list-quant" data-suicides>TBD</span></div>                
+                <div class="flex stats-list"><span class="list-what">swimDistance: </span> <span class="list-quant" data-swimDistance>TBD</span></div>    
+                <div class="flex stats-list"><span class="list-what">teamKills: </span> <span class="list-quant" data-teamKills>TBD</span></div>    
+                <div class="flex stats-list"><span class="list-what">timeSurvived: </span> <span class="list-quant" data-timeSurvived>TBD</span></div>    
+                <div class="flex stats-list"><span class="list-what">top10s: </span> <span class="list-quant" data-top10s>TBD</span></div>    
+                <div class="flex stats-list"><span class="list-what">vehicleDestroys: </span> <span class="list-quant" data-vehicleDestroys>TBD</span></div>    
+                <div class="flex stats-list"><span class="list-what">walkDistance: </span> <span class="list-quant" data-walkDistance>TBD</span></div>                
+                <div class="flex stats-list"><span class="list-what">weaponsAcquired: </span> <span class="list-quant" data-weaponsAcquired>TBD</span></div>    
+                <div class="flex stats-list"><span class="list-what">weeklyKills: </span> <span class="list-quant" data-weeklyKills>TBD</span></div>    
+                <div class="flex stats-list"><span class="list-what">weeklyWins: </span> <span class="list-quant" data-weeklyWins>TBD</span></div>    
+                <div class="flex stats-list"><span class="list-what">wins: </span> <span class="list-quant" data-wins>TBD</span></div>    
+                <div class="flex stats-list"><span class="list-what">winPoints: </span> <span class="list-quant" data-winPoints>TBD</span></div>    
+                </div>
+
+                <div class="flex player-box player-2"> 
+                    <div class="flex">
+                        <div class="flex player-header-box">
+                            <div class="flex header-number-box blue">2</div>
+                            <span class="flex header-player"></span>
+                        </div>
+                    </div> 
+                    
+                                      
+                </div>
+
+                <div class="flex player-box player-3"> 
+                    <div class="flex">
+                        <div class="flex player-header-box">
+                            <div class="flex header-number-box orange">3</div>
+                            <span class="flex header-player"></span>
+                        </div>
+                    </div>
+                     
+                </div>
+
+
+                <div class="flex player-box player-4">  
+                    <div class="flex">
+                        <div class="flex player-header-box">
+                            <div class="flex header-number-box green">4</div>
+                            <span class="flex header-player"></span>
+                        </div>
+                    </div>
+                    
+                </div>
+            
+        </div>
+<!-- STATS CONTAINER END -->
+                
+
+        </div>
+<!-- MAIN CONTAINER END -->
+
+        </main>
+
+
+
+        <div class="flex right--border"> </div>
+</div>
+
+        <div>
+
+
+
+        <div class="flex footer">
+d
+        </div>
+
+
+
+
+    </div>
+
+   
+    
+
+
+
+</body>
+</html>
